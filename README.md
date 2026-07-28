@@ -62,8 +62,7 @@ Offline-Conversational-AI-Assistant/
 ├── history.py
 │
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
