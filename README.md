@@ -53,7 +53,6 @@ Offline-Conversational-AI-Assistant/
 │
 ├── piper/
 ├── Voice/
-├── models/
 │
 ├── app.py
 ├── stt.py
