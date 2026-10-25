@@ -1,0 +1,338 @@
+{
+  "samples": [
+    {
+      "id": "NORMAL-001",
+      "reference": "I usually review my notes before class.",
+      "language": "en",
+      "category": "normal_speech",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NORMAL-002",
+      "reference": "Please remind me to bring my notebook tomorrow.",
+      "language": "en",
+      "category": "normal_speech",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NORMAL-003",
+      "reference": "I prefer studying in the library because it is quiet.",
+      "language": "en",
+      "category": "normal_speech",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NORMAL-004",
+      "reference": "Could you summarize the notes from my last lecture?",
+      "language": "en",
+      "category": "normal_speech",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NORMAL-005",
+      "reference": "I have a question about the assignment instructions.",
+      "language": "en",
+      "category": "normal_speech",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NORMAL-006",
+      "reference": "Help me plan a balanced study schedule for this week.",
+      "language": "en",
+      "category": "normal_speech",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NUMBERS-001",
+      "reference": "My student ID is 22CS108001.",
+      "language": "en",
+      "category": "numbers",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "22CS108001"
+      ]
+    },
+    {
+      "id": "NUMBERS-002",
+      "reference": "Schedule the meeting for 10:30 AM.",
+      "language": "en",
+      "category": "numbers",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NUMBERS-003",
+      "reference": "The temperature is 37.5 degrees.",
+      "language": "en",
+      "category": "numbers",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NUMBERS-004",
+      "reference": "The server is running on port 8080.",
+      "language": "en",
+      "category": "numbers",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NUMBERS-005",
+      "reference": "The model accuracy is 97.06 percent.",
+      "language": "en",
+      "category": "numbers",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NUMBERS-006",
+      "reference": "Our project review is on November 18, 2026.",
+      "language": "en",
+      "category": "numbers",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "NAMES-001",
+      "reference": "My name is Chilla Kalyan.",
+      "language": "en",
+      "category": "names",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Chilla Kalyan"
+      ]
+    },
+    {
+      "id": "NAMES-002",
+      "reference": "Please send the notes to Professor Meera Rao.",
+      "language": "en",
+      "category": "names",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Professor Meera Rao"
+      ]
+    },
+    {
+      "id": "NAMES-003",
+      "reference": "Aarav will explain the new experiment after class.",
+      "language": "en",
+      "category": "names",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Aarav"
+      ]
+    },
+    {
+      "id": "NAMES-004",
+      "reference": "Dr. Nisha Patel is leading the research discussion.",
+      "language": "en",
+      "category": "names",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Dr. Nisha Patel"
+      ]
+    },
+    {
+      "id": "NAMES-005",
+      "reference": "Email the project summary to Daniel Kim.",
+      "language": "en",
+      "category": "names",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Daniel Kim"
+      ]
+    },
+    {
+      "id": "NAMES-006",
+      "reference": "The meeting is in the Raman research laboratory.",
+      "language": "en",
+      "category": "names",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Raman research laboratory"
+      ]
+    },
+    {
+      "id": "MIXED-001",
+      "reference": "Chilla Kalyan has a meeting at 10:30 AM.",
+      "language": "en",
+      "category": "numbers_and_names",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Chilla Kalyan"
+      ]
+    },
+    {
+      "id": "MIXED-002",
+      "reference": "Professor Meera Rao assigned question 42 for Friday.",
+      "language": "en",
+      "category": "numbers_and_names",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Professor Meera Rao"
+      ]
+    },
+    {
+      "id": "MIXED-003",
+      "reference": "Daniel Kim scored 88.5 percent on the final exam.",
+      "language": "en",
+      "category": "numbers_and_names",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Daniel Kim"
+      ]
+    },
+    {
+      "id": "MIXED-004",
+      "reference": "Call the meeting room number 204 for Aarav.",
+      "language": "en",
+      "category": "numbers_and_names",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Aarav"
+      ]
+    },
+    {
+      "id": "MIXED-005",
+      "reference": "Dr. Nisha Patel is available on March 12 at 2:15 PM.",
+      "language": "en",
+      "category": "numbers_and_names",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Dr. Nisha Patel"
+      ]
+    },
+    {
+      "id": "MIXED-006",
+      "reference": "Student ID 22CS108001 belongs to Chilla Kalyan.",
+      "language": "en",
+      "category": "numbers_and_names",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "22CS108001",
+        "Chilla Kalyan"
+      ]
+    },
+    {
+      "id": "TECH-001",
+      "reference": "Python 3.11 is installed on my computer.",
+      "language": "en",
+      "category": "technical_terms",
+      "contains_numbers": true,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Python"
+      ]
+    },
+    {
+      "id": "TECH-002",
+      "reference": "Use the API endpoint version 2.",
+      "language": "en",
+      "category": "technical_terms",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "TECH-003",
+      "reference": "The speech recognizer converts audio into text.",
+      "language": "en",
+      "category": "technical_terms",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "TECH-004",
+      "reference": "The database query returned a JSON response.",
+      "language": "en",
+      "category": "technical_terms",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "TECH-005",
+      "reference": "Enable voice activity detection before transcription.",
+      "language": "en",
+      "category": "technical_terms",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "TECH-006",
+      "reference": "The neural network uses a Mel spectrogram as input.",
+      "language": "en",
+      "category": "technical_terms",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "COMMAND-001",
+      "reference": "Open the file named machine learning project.",
+      "language": "en",
+      "category": "short_commands",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "COMMAND-002",
+      "reference": "Call Chilla.",
+      "language": "en",
+      "category": "short_commands",
+      "contains_numbers": false,
+      "contains_names_entities": true,
+      "expected_entities": [
+        "Chilla"
+      ]
+    },
+    {
+      "id": "COMMAND-003",
+      "reference": "Set a timer for five minutes.",
+      "language": "en",
+      "category": "short_commands",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    },
+    {
+      "id": "COMMAND-004",
+      "reference": "Read the next paragraph aloud.",
+      "language": "en",
+      "category": "short_commands",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "COMMAND-005",
+      "reference": "Find the latest lecture notes.",
+      "language": "en",
+      "category": "short_commands",
+      "contains_numbers": false,
+      "contains_names_entities": false
+    },
+    {
+      "id": "COMMAND-006",
+      "reference": "Remind me at 8:00 AM.",
+      "language": "en",
+      "category": "short_commands",
+      "contains_numbers": true,
+      "contains_names_entities": false
+    }
+  ]
+}

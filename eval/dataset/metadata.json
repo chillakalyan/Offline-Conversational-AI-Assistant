@@ -1,0 +1,15 @@
+{
+  "samples": [
+    {
+      "id": "NORMAL-001",
+      "audio_filename": "NORMAL-001.wav",
+      "speaker_id": "speaker_01",
+      "recording_condition": "quiet_room",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "WAV",
+      "subtype": "PCM_16",
+      "recorded_at": "2026-10-23T17:27:35.448854+00:00"
+    }
+  ]
+}

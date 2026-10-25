@@ -53,6 +53,7 @@ Offline-Conversational-AI-Assistant/
 │
 ├── piper/
 ├── Voice/
+├── models/
 │
 ├── app.py
 ├── stt.py
@@ -62,7 +63,8 @@ Offline-Conversational-AI-Assistant/
 ├── history.py
 │
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -193,6 +195,77 @@ AI Total       : 11.18 sec
 Audio Playback : 7.21 sec
 ==================================================
 ```
+
+---
+
+## Human-Recorded ASR Evaluation
+
+The ASR research dataset is stored under `eval/dataset/`. It contains 36
+English reference prompts across normal speech, numbers, names, numbers with
+names, technical terms, and short commands. The audio directory contains only
+human-recorded samples listed in `metadata.json`; the current dataset includes
+one sample. No audio is generated for this dataset. Recorded results therefore
+reflect only the available samples and should not be treated as representative
+of other speakers, devices, or recording conditions.
+
+Each prompt in `references.json` has an ID, exact reference transcript,
+language, category, and flags for numbers and names/entities. Each completed
+recording is listed in `metadata.json` with its audio filename, speaker ID,
+recording condition, and verified audio format. Recordings must be mono,
+16 kHz, 16-bit PCM WAV.
+
+### Record a sample
+
+From the project root, list the prompts:
+
+```bash
+python eval/record_dataset.py --list
+```
+
+Record one prompt interactively (choose from the prompt list):
+
+```bash
+python eval/record_dataset.py
+```
+
+Or select a specific prompt and supply metadata on the command line:
+
+```bash
+python eval/record_dataset.py --sample NORMAL-001 --speaker-id speaker_01 --condition quiet_room
+```
+
+The script displays the reference sentence, waits for Enter, and records for
+six seconds by default. Adjust the duration with `--duration 8`. Speak the
+displayed sentence as written; record the actual speech rather than uploading
+or synthesizing text. Choose a consistent, non-identifying speaker ID and
+describe the condition truthfully (for example, `quiet_room` or
+`fan_noise_nearby`). A prompt may have only one recording in the current
+dataset inventory; re-recording requires intentionally replacing its existing
+WAV and metadata entry.
+
+The recorder validates the saved WAV and metadata. The evaluator also validates
+the dataset before loading Faster-Whisper:
+
+```bash
+python eval/evaluate_asr.py --recorded-audio --output-json eval/recorded_eval_results.json --output-md eval/recorded_eval_report.md
+```
+
+Only samples with actual recorded WAV files are transcribed and scored. If no
+samples have been recorded, the command reports that empirical results are
+unavailable and leaves WER/CER as `null` in JSON. For populated datasets it
+reports per-utterance averages separately from corpus WER/CER, and groups
+sentence-level results by category, recording condition, and speaker. It
+compares annotated numeric content and expected entities deterministically,
+and records simple edit/error labels per utterance. The raw Whisper hypothesis
+is scored without correction; metric text normalization only handles case and
+punctuation.
+
+`--recorded-audio` skips fixture evaluation; use `--include-fixtures` to run
+both separately in one invocation.
+The default command (without `--recorded-audio`) runs only the fixture
+evaluation, which uses prewritten hypotheses and is not a real ASR benchmark.
+The legacy `--empirical` option runs a separate Piper-generated audio smoke
+test; it is also not human-recorded evaluation.
 
 ---
 

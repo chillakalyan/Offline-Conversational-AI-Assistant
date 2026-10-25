@@ -1,0 +1,24 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.stage1_backup/
+recordings/
+*.pyc
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+compile_out.txt
+pytest_out.txt
+
+# Local conversation history
+history/
+
+# Local Piper voice model (download separately)
+Voice/*.onnx

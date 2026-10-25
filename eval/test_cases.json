@@ -1,0 +1,182 @@
+[
+  {
+    "id": "CASE-01",
+    "domain": "student_identification",
+    "reference": "My student ID is STU-1029 and I am enrolled in Computer Science.",
+    "hypothesis": "My student ID is STU-1029 and I am enrolled in Computer Science.",
+    "entities": {
+      "student_ids": ["STU-1029"],
+      "numbers": [],
+      "dates": [],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-02",
+    "domain": "grading_and_academics",
+    "reference": "I scored 94 out of 100 in Physics 101 with Professor Sharma.",
+    "hypothesis": "I scored 94 out of 100 in Physics 101 with Professor Sharma.",
+    "entities": {
+      "student_ids": [],
+      "numbers": ["94", "100", "101"],
+      "dates": [],
+      "names": ["Professor Sharma"]
+    }
+  },
+  {
+    "id": "CASE-03",
+    "domain": "deadlines_and_scheduling",
+    "reference": "The machine learning assignment is due on October 24th at 5:00 PM.",
+    "hypothesis": "The machine learning assignment is due on October 24th at 5:00 PM.",
+    "entities": {
+      "student_ids": [],
+      "numbers": [],
+      "dates": ["October 24th", "5:00 PM"],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-04",
+    "domain": "student_identification",
+    "reference": "Please verify registration for student S98234 Kalyan.",
+    "hypothesis": "Please verify registration for student S98234 Kalyan.",
+    "entities": {
+      "student_ids": ["S98234"],
+      "numbers": [],
+      "dates": [],
+      "names": ["Kalyan"]
+    }
+  },
+  {
+    "id": "CASE-05",
+    "domain": "grading_and_academics",
+    "reference": "My cumulative GPA is 3.85 after completing 48 credit hours.",
+    "hypothesis": "My cumulative GPA is 3.85 after completing 48 credit hours.",
+    "entities": {
+      "student_ids": [],
+      "numbers": ["3.85", "48"],
+      "dates": [],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-06",
+    "domain": "assistant_persona",
+    "reference": "Hello LockIN, what is the schedule for Monday morning?",
+    "hypothesis": "Hello LockIN, what is the schedule for Monday morning?",
+    "entities": {
+      "student_ids": [],
+      "numbers": [],
+      "dates": ["Monday"],
+      "names": ["LockIN"]
+    }
+  },
+  {
+    "id": "CASE-07",
+    "domain": "faculty_and_advising",
+    "reference": "Dr. Rao has scheduled office hours tomorrow at 10:30 AM in room 402.",
+    "hypothesis": "Dr. Rao has scheduled office hours tomorrow at 10:30 AM in room 402.",
+    "entities": {
+      "student_ids": [],
+      "numbers": ["402"],
+      "dates": ["tomorrow", "10:30 AM"],
+      "names": ["Dr. Rao"]
+    }
+  },
+  {
+    "id": "CASE-08",
+    "domain": "course_enrollment",
+    "reference": "Student 2024CS101 wants to register for three elective subjects.",
+    "hypothesis": "Student 2024CS101 wants to register for three elective subjects.",
+    "entities": {
+      "student_ids": ["2024CS101"],
+      "numbers": ["three"],
+      "dates": [],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-09",
+    "domain": "complex_query",
+    "reference": "Student ID ID-9082 requested an extension until November 15th, 2026.",
+    "hypothesis": "Student ID ID-9082 requested an extension until November 15th, 2026.",
+    "entities": {
+      "student_ids": ["ID-9082"],
+      "numbers": [],
+      "dates": ["November 15th, 2026"],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-10",
+    "domain": "general_student_support",
+    "reference": "The library closes at 9:00 PM on Friday and opens at 8:00 AM on Saturday.",
+    "hypothesis": "The library closes at 9:00 PM on Friday and opens at 8:00 AM on Saturday.",
+    "entities": {
+      "student_ids": [],
+      "numbers": [],
+      "dates": ["9:00 PM", "Friday", "8:00 AM", "Saturday"],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-11",
+    "domain": "simulated_asr_error_homophone",
+    "reference": "There are two seminars scheduled in room 204.",
+    "hypothesis": "Their are to seminars scheduled in room 204.",
+    "entities": {
+      "student_ids": [],
+      "numbers": ["two", "204"],
+      "dates": [],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-12",
+    "domain": "simulated_asr_error_spelling",
+    "reference": "LockIN can you email Professor Miller by Tuesday?",
+    "hypothesis": "Lock in can you email Professor Miller by Tuesday?",
+    "entities": {
+      "student_ids": [],
+      "numbers": [],
+      "dates": ["Tuesday"],
+      "names": ["LockIN", "Professor Miller"]
+    }
+  },
+  {
+    "id": "CASE-13",
+    "domain": "simulated_asr_error_id_hyphen",
+    "reference": "My student ID is STU-5542 and I need assistance.",
+    "hypothesis": "My student ID is STU 5542 and I need assistance.",
+    "entities": {
+      "student_ids": ["STU-5542"],
+      "numbers": [],
+      "dates": [],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-14",
+    "domain": "simulated_asr_error_deletion",
+    "reference": "The final exam is on December 12th in hall B.",
+    "hypothesis": "The exam is on December 12th in hall B.",
+    "entities": {
+      "student_ids": [],
+      "numbers": [],
+      "dates": ["December 12th"],
+      "names": []
+    }
+  },
+  {
+    "id": "CASE-15",
+    "domain": "numerical_data",
+    "reference": "75 percent of students passed the calculus test.",
+    "hypothesis": "75 percent of students passed the calculus test.",
+    "entities": {
+      "student_ids": [],
+      "numbers": ["75%"],
+      "dates": [],
+      "names": []
+    }
+  }
+]

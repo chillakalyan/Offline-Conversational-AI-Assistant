@@ -1,6 +1,30 @@
-numpy
-sounddevice
-soundfile
-scipy
-faster-whisper
-ollama
+# ============================================================
+# requirements.txt — Offline Conversational AI Assistant
+# Stage 1: version-pinned based on verified pip freeze output
+# Python 3.11.9 · Windows 11 · CPU-only
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# Audit fix: CR-3 (D-4) — all packages now version-pinned
+# ============================================================
+
+# --- Audio I/O ---
+sounddevice==0.5.6
+soundfile==0.14.0
+
+# --- Scientific computing ---
+numpy==2.4.6
+scipy==1.17.1
+
+# --- Automatic Speech Recognition ---
+faster-whisper==1.2.1
+
+# --- Local LLM via Ollama ---
+ollama==0.6.3
+
+# --- Web Interface (Gradio) ---
+gradio==6.30.0
+
+# --- Tests ---
+pytest==9.1.1
